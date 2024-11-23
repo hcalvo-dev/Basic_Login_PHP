@@ -1,0 +1,142 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenido--left {
+    width: 40%;
+}
+
+.contenido--right {
+    width: 40%;
+}
+
+.container-down {
+    margin: auto;
+
+}
+
+.contenido--up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.h3--centro{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.palabra,
+.enviar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.enviar {
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.boton__enviar {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 10%;
+}
+
+.boton__enviar:hover {
+    background-color: #357ab8;
+}
+
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+}
+
+.title--left {
+    text-align: left;
+}
+
+.palabra__input {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgba(85, 85, 85, 0.4);
+    padding: 10px;
+}
+.register__entrada {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 0;
+    /* background: linear-gradient(150deg, #6ea3e0, #797979); */
+    outline: none;
+    font-size: 15px;
+    font-weight: 350px;
+    letter-spacing: 3px;
+    /* color: #fff; */
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgba(85, 85, 85, 0.4);
+}
+#imagen {
+    width: max-content;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    font-size: 12px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#imagen:hover {
+    border-color: #007BFF;
+    background-color: #e6f0ff;
+}
+
+#imagen:focus {
+    outline: none;
+    border-color: #007BFF;
+    background-color: #e6f0ff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@media screen and (max-width: 1280px) {
+    .container-left {
+        width: 100%;
+    }
+
+    .container-down {
+        width: 95%;
+        margin: auto;
+    }
+
+    .contenido--right {
+        width: max-content;
+    }
+
+    .boton__enviar {
+        width: max-content;
+    }
+
+}

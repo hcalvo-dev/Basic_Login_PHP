@@ -1,0 +1,40 @@
+.palabra {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+
+    height: 60px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    width: 28%;
+}
+
+.title--center {
+    text-align: center;
+}
+
+.palabra__input {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgba(85, 85, 85, 0.4);
+    padding: 10px;
+}
+
+.error__campo{
+    align-self: center;
+    width: max-content;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .palabra {
+        width: 100%;
+    }
+
+}

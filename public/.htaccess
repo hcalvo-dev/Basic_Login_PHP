@@ -1,0 +1,12 @@
+# Activa el motor de reescritura
+RewriteEngine On
+
+# Redirige todas las solicitudes a index.php, excepto si el archivo o directorio existen
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^ index.php [QSA,L]
+
+# Añade el tipo de contenido para archivos CSS
+AddType text/css .css   
+

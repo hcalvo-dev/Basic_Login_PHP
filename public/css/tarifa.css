@@ -1,0 +1,110 @@
+.formulario {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.register__datos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: max-content;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
+.register__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.register__description {
+    color: #333;
+    margin: 0 20px 0;
+    font-size: 16px;
+}
+
+.register__description--menor {
+    margin: 0 12px 0;
+}
+
+
+.register__entrada {
+    width: 280px;
+    height: 100%;
+    padding: 10px;
+    border: 0;
+    background: linear-gradient(150deg, #6ea3e0, #797979);
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 350px;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+.boton__enviar {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton__enviar:hover {
+    background-color: #357ab8;
+}
+
+.container__table {
+    margin: 20px 0;
+    width: 95%;
+    height: max-content;
+}
+
+.tabla__tarifa {
+    width: 100%;
+    background-color: #e7e6e7;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+th,td {
+    padding: 8px;
+}
+
+.titulotabla {
+    background-color: #adb3b1;
+}
+
+ #columna1 {
+    background-color: #dae0dd;
+    width: 33%;
+}
+
+
+@media screen and (max-width: 1030px) {
+    .register__datos {
+        flex-direction: column;
+    }
+
+    .register__item {
+        width: 100%;
+    }
+
+    .register__entrada {
+        width: 70%;
+    }
+}
